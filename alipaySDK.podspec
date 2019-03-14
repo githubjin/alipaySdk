@@ -2,7 +2,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "alipaySDK"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "alipay SDK."
   spec.description  = <<-DESC
                       - - - - - - - - - - - dassion local alipay sdk - - - - - - - - - - -
@@ -12,6 +12,6 @@ Pod::Spec.new do |spec|
   spec.author             = { "Kuper" => "1252833909@qq.com" }
   spec.source       = { :git => "https://github.com/githubjin/alipaySdk.git", :tag => "#{spec.version}" }
   spec.resource = "AlipaySDK.bundle"
-  spec.framework  = "AlipaySDK"
+  spec.vendored_frameworks = ["AlipaySDK.framework"]
 
 end
